@@ -1,0 +1,35 @@
+import random
+def main():
+    introduction()
+    asking_input()
+    
+    
+
+def introduction():
+    print("Hey! I'm Hazel, the AI robot")
+    print("Let's play a handcricket")
+
+
+def asking_input():
+    print("I choose to bat")
+    user = int(input("Enter a number from 1 to 10: "))
+    ai = random.randint(1,5)
+    print("Hazel plays: ",ai)
+    total = 0
+    total = total+ai
+    while user!=ai:
+       user = int(input("Enter a number from 1 to 10: "))
+       ai = random.randint(1,5)
+       print("Hazel plays: ",ai)
+       total = total+ai
+       
+    print("Game over")
+    print("The runs scored by Hazel is: ",total)
+
+
+
+
+       
+
+if __name__ == '__main__':
+    main()
